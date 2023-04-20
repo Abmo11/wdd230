@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+header,
+main,
+footer {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+main {
+  letter-spacing: 0.12rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 0 0 0.8rem 0.8rem;
+  background-color: darkslategray;
+  padding: 1rem;
+}
+
+#portrait {
+  width: 170px;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+
+h1 {
+  color: azure;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-left: 1.2rem;
+  font-size: 1.7rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: .7rem;
+}
+
+footer {
+  color: azure;
+  margin-top: 1.5rem;
+  background-color: darkslategray;
+  padding: 1.2rem;
+  text-align: center; /* text is centered within the parent element */
+  border-radius: 0.8rem 0.8rem 0 0;
+}
