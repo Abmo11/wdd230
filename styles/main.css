@@ -46,6 +46,8 @@ ul {
   list-style-type: none;
   padding-left: 0;
   margin-left: 1.3rem;
+  font-family: "Roboto Mono", monospace, sans-serif;
+  font-weight: bold;
 }
 
 footer {
@@ -55,4 +57,8 @@ footer {
   padding: 1.2rem;
   text-align: center; /* text is centered within the parent element */
   border-radius: 0.8rem 0.8rem 0 0;
+}
+
+#updated {
+  margin-top: .8rem;
 }
