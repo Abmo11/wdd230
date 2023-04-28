@@ -1,0 +1,56 @@
+header,
+main,
+footer {
+  font-family: "IBM Plex Sans", helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center; /* all text is centered within these parent elements */
+}
+
+header {
+  background-image: linear-gradient(#dadada, #ffffff);
+  padding: 1rem 0;
+  margin-bottom: 1rem; /* Puts space btwn header and articles*/
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+article {
+  background-image: linear-gradient(#f1f1f1, #ffffff);
+  border: 1px solid #272727;
+  border-radius: 0.7rem 0.7rem 0 0;
+  padding: 1rem; /* Puts padding/space inside and all around the parent article element.. nothnig oveflows*/
+  /* keeps text inside parent element*/
+}
+
+article h3 {
+  padding-bottom: 1rem;
+}
+
+article img {
+  width: 100%; /* fill container completely, problems if set at px*/
+  height: auto;
+  border: 1px solid #272727;
+  margin-top: 1rem;
+}
+
+.explain {
+  text-align: justify;
+  line-height: 1.35rem;
+}
+
+footer {
+  margin-top: 1rem; /* space btwn footer and articles*/
+  padding: 1rem 0; /* padding top and bottom, none to the sides*/
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#updated {
+  margin-top: 0.8rem;
+}
