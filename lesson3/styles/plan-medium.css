@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em) {
+  /* Flex on Navigation Bar has to be applied in medium view */
+  nav ul {
+    display: flex; /* Applies Flex */
+  }
+  nav ul li {
+    flex: 1 1 auto; /* Determines the space ratio */
+  }
+
+  .medGrid1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .medGrid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #typography {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Makes the last element in .medGrid2 span 2 columns */
+  .medGrid2 article:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  /* Makes the last element in #typography span 2 columns */
+  #typography article:nth-child(3) {
+    grid-column: span 2;
+  }
+}

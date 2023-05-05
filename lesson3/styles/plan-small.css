@@ -1,0 +1,201 @@
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+header img {
+  width: 90%;
+}
+
+/************************************************************/
+/* Navigation bar and design                                */
+nav {
+  background-color: #d80000;
+  text-align: center;
+}
+
+/* Adjusts so the links don't have margin or padding 
+  And takes bullet points away                       */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  display: block;  /* The links expand to fill the container */
+  color: #ffffff;
+  text-align: center;
+  padding: .75rem;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #7a7a7a;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #d80000;
+}
+/****************************************************************/
+h1,
+h2,
+h3 {
+  font-family: "Cabin", Helvetica, sans-serif;
+  letter-spacing: 0.15rem;
+}
+
+.medGrid1,
+.medGrid2,
+#typography {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/*************************************************************/
+/* Persona list styling                                      */
+
+.headingDeco article {
+  background-color: #ffffff;
+  color: #002868;
+}
+
+article ul {
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+article ul li {
+  padding: 1rem;
+}
+
+.medGrid1 article {
+  padding: 0;     /* Makes lists even at the bottom   */
+}
+
+/* Set alternate background color for even list items */
+article ul li:nth-child(even) {
+  color: #d80000;
+}
+
+.personaWrapr {
+  background-color: #d80000;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/***************************************************************/
+
+.audBorder {
+    border: .5rem solid #002868;
+}
+
+/* Link style none in Design page               */
+a {
+  text-decoration: none;
+}
+
+a h2:hover {
+  background-color: #d80000;
+}
+
+/* Styles section headings in the Design page    */
+.headingDeco,
+h2 {
+  padding: 2rem;
+  background-color: #002868;
+  color: #ffffff;
+}
+
+/* Grid for the color samples in Design page      */
+.colorGrid {
+  margin: 1rem;
+}
+
+.colorGrid article {
+  color: #ffffff;
+  border: 0.1rem solid black;
+}
+
+/* Centers the color name in its container in Design page */
+.colorGrid p {
+  text-align: center;
+}
+
+article {
+  padding: 1rem;
+}
+
+p {
+  text-align: justify;
+}
+
+/******************************************************/
+/* Adds specific colors to the color palet grid-table */
+#primary {
+  background-color: #002868;
+}
+
+#secondary {
+  background-color: #d80000;
+}
+
+#acc1 {
+  background-color: #7a7a7a;
+}
+
+#acc2 {
+  background-color: #ff5858;
+}
+
+#acc3 {
+  background-color: #ffffff;
+  color: #002868;
+}
+/*******************************************************/
+/* Styling for font sample sections in Design page     */
+#cabinFont {
+  font-family: "Cabin", Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+#poppinsFont {
+  font-family: "Poppins", Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+/*******************************************************/
+/* Background colors, spacing, etc.                    */
+header {
+  background-image: linear-gradient(#002868, #ffffff);
+}
+
+main {
+  background-color: lightgrey;
+}
+
+footer {
+  background-color: #d80000;
+  color: #ffffff;
+  margin: 1rem auto;
+  padding: 2rem 0;
+}
+
+#updated {
+  margin-top: 0.8rem;
+}
