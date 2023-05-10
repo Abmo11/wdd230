@@ -1,0 +1,72 @@
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/***************************************************************/
+/*******************   NAVIGATION   ****************************/
+/***************************************************************/
+nav {
+  background-color: cadetblue;
+}
+
+/* styles the button */
+#hamBtn {
+  font-size: 2rem; /* makes it to standards of mobile viewports */
+  color: #555;
+}
+
+/* condences the ul container - ready for links to be more accessible */
+#navOne {
+  display: flex;
+  flex-direction: column; /* makes li's stack on top of each other */
+  list-style: none; /* removes dots next to the li's */
+  padding: 0; /* removes space left of the li's */
+  margin: 0; /* removes space on top and underneath li's */
+}
+
+/* hides the li's in the nav - ready to toggle */
+#navOne li {
+  display: none;
+}
+
+/* only displays the first li in the nav */
+#navOne li:first-child {
+    display: block;
+}
+
+/* makes links accessible to mobile users */
+#navOne a {
+  display: block; /* makes the entire container clickable */
+  padding: .5rem; /* adds padding between li's and brings them to the buttons margin on left */
+  text-decoration: none; /* removes the underline */
+  color: #333; /* added for less contrast */
+  /* rgba 0,0,0 is black - .5 is 50% black - 50% black tranparent */
+  /* puts border on top of li's */
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* highlights current page */
+/* must be before hover effect so current page link can also be highlighted */
+.active a {
+  background-color: rgba(0, 0, 0, 0.2); /* 20% transparency black */
+  color: #fff;
+}
+
+/* hover effect on navigation */
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* 30% transparency black */
+}
+
+/* toggles the li's in the small view */
+#navOne.open li {
+  display: block; /* stacks li's on top of each other in small menu */
+  width: 100%;
+}
+
+/***************************************************************/
+/******************* ^^  NAVIGATION ^^  ************************/
+/***************************************************************/
