@@ -1,0 +1,89 @@
+@media only screen and (min-width: 64em) {
+  /********************************************************/
+  /********************   Header   ************************/
+  /********************************************************/
+  #headerContainer {
+    justify-content: space-evenly;
+  }
+  /* removes hamburger button in large view */
+  #linkLogos button {
+    display: none;
+  }
+
+  /********************************************************/
+  /****************   NAVIGATION   ************************/
+  /********************************************************/
+  /* makes li's display next to each other */
+  nav ul#navOne {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul li:first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .largeNav ul {
+    display: flex;
+  }
+
+  #smallNav {
+    display: none;
+  }
+
+  /********************************************************/
+  /*****************   Main GRID   ************************/
+  /********************************************************/
+  main {
+    /* template: rows / columns */
+    grid-template: repeat(3, 1fr) / 1fr 2fr 1fr;
+  }
+
+  /* start / end - whole num takes only 1 row/col */
+  .heroDiv {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .artWeather {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .newsRelease {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+
+  .hiddenArticle {
+    display: block;
+  }
+
+  .spotDiv {
+    grid-column: 3;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .join {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /********************************************************/
+  /********************   Footer   ************************/
+  /********************************************************/
+  .info {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
