@@ -20,9 +20,13 @@ h3 {
 /********************************************************/
 /********************   Header   ************************/
 /********************************************************/
+header {
+  background-color: #d80000;
+  padding-bottom: .2rem;
+}
+
 #headerContainer {
   display: flex;
-  background-color: #d80000;
   align-items: center;
   padding: 0.7rem;
   justify-content: space-between;
@@ -76,11 +80,23 @@ h3 {
 }
 
 /********************************************************/
+/****************   Header Date   ***********************/
+#headerDate {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2); /* smart css */
+  color: #ffffff;
+  padding: .5rem;
+  width: 90%;
+  height: auto;
+  margin: 0 auto .5rem;
+}
+
+/********************************************************/
 /****************   NAVIGATION   ************************/
 /********************************************************/
 nav {
   text-align: center;
-  background-color: cadetblue;
+  background-color: #002868;
 }
 
 nav ul {
@@ -99,19 +115,19 @@ nav ul li a {
   display: block; /* makes the links clickable in entire container */
   padding: 0.8rem; /* makes clickable space around links */
   text-decoration: none; /* removes underlines */
-  color: #333;
-  border-top: 1px solid rgba(0, 0, 0, 0.2); /* smart css */
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.8); /* smart css */
 }
 
 /* highlights active page, must come before hover to also have a hover */
 nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #d80000;
 }
 
 nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3); /* smart css */
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #d80000;
 }
 
 /*hiddes both navs li's - small to be toggled by JS */

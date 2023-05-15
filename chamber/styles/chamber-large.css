@@ -21,12 +21,12 @@
 
   nav ul li a {
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #ffffff;
     padding: 0.5rem 1rem;
   }
 
   nav ul li:first-child {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #ffffff;
   }
 
   .largeNav ul {
