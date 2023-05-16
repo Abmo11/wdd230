@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham Moreno | Book of Mormon Favorites</title>
+    <meta
+      name="description"
+      content="App that creates a list of favorite B.O.M chapters">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bom-base.css">
+    <link rel="stylesheet" href="styles/bom-large.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>📖 Book of Mormon Favorites</h1>
+    </header>
+
+    <main>
+      <div id="inputBlock">
+        <label for="item">Enter Book and Chapter:</label>
+        <input type="text" id="item">
+        <button>Add Chapter</button>
+      </div>
+
+      <ul></ul>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> | Abraham Moreno | Idaho
+      <div id="updated"></div>
+    </footer>
+    <script src="scripts/create-list.js"></script>
+    <script src="scripts/lastmod.js"></script>
+  </body>
+</html>

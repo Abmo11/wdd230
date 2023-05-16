@@ -1,0 +1,88 @@
+header,
+main,
+footer {
+  max-width: 700px;
+  font-family: "IBM Plex Sans", helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#dadada, #ffffff);
+  height: 7rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+/*************************************************/
+/*****************   MAIN   **********************/
+/*************************************************/
+main {
+  padding-top: 2rem;
+  background-image: linear-gradient(#dadada, #ffffff);
+}
+
+#inputBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+#inputBlock > * {
+  margin: 0 2rem 1rem 2rem;
+}
+
+#inputBlock input {
+  padding: 0.3rem 0.6rem;
+}
+
+#inputBlock button {
+  font-size: 0.9rem;
+  background-color: #313131;
+  color: #ffffff;
+  border-radius: 3rem;
+  padding: 0.5rem;
+}
+
+#inputBlock button:hover {
+  color: #00aeff;
+}
+
+/*************************************************/
+/************   UL Styles   **********************/
+/*************************************************/
+ul {
+  list-style-type: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul button {
+  font-size: 0.6rem;
+  background-color: #313131;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+/*************************************************/
+/***************   Footer   **********************/
+/*************************************************/
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+#updated {
+  padding-top: 0.7rem;
+}
