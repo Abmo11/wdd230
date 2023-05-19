@@ -1,126 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Dallas Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Chamber of commerce website for the Dallas, Texas metropolitan area">
+    <link rel="icon" href="gdcc-icon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-normalize.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Greater Dallas Chamber of Commerce</title>
-  <meta name="description" content="Chamber of commerce website for the Dallas, Texas metropolitan area">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/chamber-normalize.css">
-  <link rel="stylesheet" href="styles/chamber-base.css">
-  <link rel="stylesheet" href="styles/chamber-medium.css">
-  <link rel="stylesheet" href="styles/chamber-large.css">
-</head>
-
-<body>
-  <header>
-    <div id="headerContainer">
-      <div>
-        <picture>
-          <img src="images/gdcc-logo.png" alt="Greater Dallas Chamber of Commerce logo">
-        </picture>
-        <div class="nameTitle">
-          <h1>Greater Dallas</h1>
-          <p>Chamber of Commerce</p>
+  <body>
+    <header>
+      <div id="monTueBanner">
+        Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+      </div>
+      <div id="headerContainer">
+        <div>
+          <picture>
+            <img src="images/gdcc-logo.png" alt="Greater Dallas Chamber of Commerce logo">
+          </picture>
+          <div class="nameTitle">
+            <h1>Greater Dallas</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <div class="largeNav">
+          <nav>
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Discovery</a></li>
+              <li><a href="#">Direction</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="linkLogos">
+          <a href="https://www.youtube.com/">
+            <img src="images/youtube-icon.png" alt="YouTube icon logo">
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook-icon.png" alt="Facebook icon logo">
+          </a>
+          <button id="hamburger">
+            <span>&#9776;</span>
+            <span>&#10005;</span>
+          </button>
         </div>
       </div>
-      <div class="largeNav">
+      <div id="headerDate"></div>
+      <div id="smallNav">
         <nav>
-          <ul>
-            <li class="active"><a href="#">Discovery</a></li>
+          <ul id="navOne">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Discovery</a></li>
             <li><a href="#">Direction</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div id="linkLogos">
-        <a href="https://www.youtube.com/">
-          <img src="images/youtube-icon.png" alt="YouTube icon logo">
-        </a>
-        <a href="https://www.facebook.com/">
-          <img src="images/facebook-icon.png" alt="Facebook icon logo">
-        </a>
-        <button id="hamburger">
-          <span>&#9776;</span>
-          <span>&#10005;</span>
-        </button>
-      </div>
-    </div>
-    <div id="headerDate"></div>
-    <div id="smallNav">
-      <nav>
-        <ul id="navOne">
-          <li class="active"><a href="#">Discovery</a></li>
-          <li><a href="#">Direction</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="heroDiv">
-      <h2>Hero with site name and call to action</h2>
-    </div>
-    <article class="artEvent">
-      <h3>Event</h3>
-    </article>
-    <article class="artWeather">
-      <h3>Weather</h3>
-    </article>
-    <article class="newsRelease">
-      <h3>News Release</h3>
-    </article>
-    <div class="spotDiv">
-      <article>
-        <h3>Spotlight 1</h3>
-      </article>
-      <article>
-        <h3>Spotlight 2</h3>
-      </article>
-      <article class="hiddenArticle">
-        <h3>Spotlight 3</h3>
-      </article>
-    </div>
-    <article class="join">
-      <h3>Join</h3>
-    </article>
-  </main>
-
-  <footer>
-    <div id="flexFootMain">
-      <div>
-        <img src="images/gdcc-logo.png" alt="Greater Dallas Chamber of Commerce logo">
+    <main>
+      <div class="heroDiv">
+        <h2>Welcome to Dallas</h2>
+        <img src="images/hero-dallas.jpg" alt="Downtown Dallas Texas">
         <div>
-          <p>Greater Dallas Chamber of Commerce</p>
-          <p>3819 Maple Ave, Dallas, TX 75219</p>
+          <p>Join the chamber</p>
         </div>
       </div>
-      <div>
-        <p>info@GDallasChamber.org</p>
-        <p>(214)-000-0000</p>
-        <a href="https://goo.gl/maps/XXfRvziYpz8ioQsT8" target="_blank">&#128205; Location Map</a>
+      <article class="artEvent">
+        <h3>Business Networking</h3>
+        <p>📍 3819 Maple Ave, Dallas, TX 75219 #101</p>
+        <p>Join us every Thursday at 7:30pm for our weekly networking event.</p>
+      </article>
+      <article class="artWeather">
+        <h3>Weather</h3>
+        <img src="images/sunny-icon.png" alt="Icon of a sun">
+        <p>102º F</p>
+        <p>Sunny</p>
+        <div>
+          <hr>
+        </div>
+        <p>Wind Speed:</p>
+        <p>2 mph</p>
+      </article>
+      <article class="newsRelease">
+        <h3>News Release</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+          error? Dolorem, necessitatibus incidunt? Reiciendis beatae molestiae
+          praesentium qui natus, consequatur voluptate vel culpa? Quasi
+          accusamus eveniet repellat odit ullam aperiam natus totam officiis
+          perferendis dolore excepturi velit enim in repellendus nam, possimus
+          sequi quibusdam?
+        </p>
+      </article>
+      <div class="spotDiv">
+        <article class="articleLayout">
+          <h3>Pro Painters</h3>
+          <img src="images/sunny-icon.png" alt="Icon of a sun">
+          <p>The right painters</p>
+          <div>
+            <hr>
+          </div>
+          <p>Contact@ProPaint.com</p>
+          <p>999-999-999 | ProPaint.com</p>
+        </article>
+        <article class="articleLayout">
+          <h3>Pro Painters</h3>
+          <img src="images/sunny-icon.png" alt="Icon of a sun">
+          <p>The right painters</p>
+          <div>
+            <hr>
+          </div>
+          <p>Contact@ProPaint.com</p>
+          <p>999-999-999 | ProPaint.com</p>
+        </article>
+        <article class="articleLayout hiddenArticle">
+          <h3>Pro Painters</h3>
+          <img src="images/sunny-icon.png" alt="Icon of a sun">
+          <p>The right painters</p>
+          <div>
+            <hr>
+          </div>
+          <p>Contact@ProPaint.com</p>
+          <p>999-999-999 | ProPaint.com</p>
+        </article>
       </div>
-    </div>
-    <hr>
-    <div class="info">
-      <div>
-        <p>&copy;<span id="year"></span> Dallas Chamber</p>
-        <p>|</p>
-        <p>Abraham Moreno</p>
-        <p>|</p>
-        <p> WDD 230 Project</p>
-        <p>|</p>
+      <div class="join">
+        <button>Join Us!</button>
+        <p>
+          Discover how to join the chamber of commerce and how it will benefit
+          your organization!
+        </p>
       </div>
-      <div id="updated"></div>
-    </div>
-  </footer>
-  <script src="scripts/lastmod.js"></script>
-  <script src="scripts/nav-menu.js"></script>
-  <script src="scripts/headerDate.js"></script>
-</body>
+    </main>
 
+    <footer>
+      <div id="flexFootMain">
+        <div>
+          <img src="images/logo-bottom.png" alt="Greater Dallas Chamber of Commerce logo">
+          <div>
+            <p>GT Dallas Chamber of Commerce</p>
+            <p>3819 Maple Ave, Dallas, TX 75219</p>
+          </div>
+        </div>
+        <div>
+          <p>info@GDallasChamber.org</p>
+          <p>(214)-000-0000</p>
+          <a href="https://goo.gl/maps/XXfRvziYpz8ioQsT8" target="_blank">&#128205; Location Map</a>
+        </div>
+      </div>
+      <hr>
+      <div class="info">
+        <div>
+          <p>&copy;<span id="year"></span> Dallas Chamber</p>
+          <p>|</p>
+          <p>Abraham Moreno</p>
+          <p>|</p>
+          <p>WDD 230 Project</p>
+          <p>|</p>
+        </div>
+        <div id="updated"></div>
+      </div>
+    </footer>
+    <script src="scripts/lastmod.js"></script>
+    <script src="scripts/nav-menu.js"></script>
+    <script src="scripts/headerDate.js"></script>
+  </body>
 </html>

@@ -3,23 +3,56 @@
   /********************   Header   ************************/
   /********************************************************/
   #headerContainer {
-    justify-content: space-evenly;
+    display: grid;
+    /* template: rows / columns */
+    grid-template: 1fr / 2fr 2fr 1fr;
   }
+
+  #headerContainer img {
+    width: 120px;
+  }
+
+  #headerContainer div:nth-child(1) {
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .nameTitle h1 {
+    font-size: 1.7rem;
+  }
+
+  .nameTitle p {
+    font-size: 1rem;
+  }
+
+  #headerContainer .largeNav {
+    justify-content: center;
+  }
+
+  #headerContainer #linkLogos {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  #linkLogos img {
+    max-width: 31px;
+  }
+
   /* removes hamburger button in large view */
   #linkLogos button {
     display: none;
+  }
+
+  #headerDate {
+    max-width: 900px;
   }
 
   /********************************************************/
   /****************   NAVIGATION   ************************/
   /********************************************************/
   /* makes li's display next to each other */
-  nav ul#navOne {
-    display: flex;
-    justify-content: center;
-  }
-
   nav ul li a {
+    font-size: 0.9rem;
     border: none;
     border-right: 1px solid #ffffff;
     padding: 0.5rem 1rem;
@@ -31,6 +64,10 @@
 
   .largeNav ul {
     display: flex;
+  }
+
+  .largeNav ul li {
+    flex: 1 1 auto;
   }
 
   #smallNav {
@@ -77,6 +114,18 @@
     display: block;
     grid-column: 1;
     grid-row: 3;
+  }
+
+  /********************************************************/
+  /*****************   Main Styles   ************************/
+  .heroDiv h2 {
+    font-size: 2rem;
+    top: 10%;
+    left: 7%;
+  }
+
+  .heroDiv div {
+    top: 75%;
   }
 
   /********************************************************/
