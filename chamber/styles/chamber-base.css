@@ -288,7 +288,7 @@ main {
 
 /* children of .spotDiv expand & fill space equally */
 .spotDiv article {
-  flex: 1;
+  flex: 1 1 100%;
 }
 
 /********************************************************/
