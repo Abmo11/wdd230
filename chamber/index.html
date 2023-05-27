@@ -25,7 +25,7 @@
       <div id="headerContainer">
         <div>
           <picture>
-            <img src="images/gdcc-logo.png" alt="Greater Dallas Chamber of Commerce logo">
+            <img src="images/gdcc-logo.webp" alt="Greater Dallas Chamber of Commerce logo">
           </picture>
           <div class="nameTitle">
             <h1>Greater Dallas</h1>
@@ -73,7 +73,11 @@
     <main>
       <div class="heroDiv">
         <h2>Welcome to Dallas</h2>
-        <img src="images/hero-dallas.jpg" alt="Downtown Dallas Texas">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/hero-lg-460.jpg">
+          <source media="(min-width: 520px)" srcset="images/hero-med-900.jpg">
+          <img src="images/hero-sm-540.jpg" alt="Small hero image">
+        </picture>
         <div>
           <p>Join the chamber</p>
         </div>
@@ -86,55 +90,56 @@
       <article class="artWeather">
         <h3>Weather</h3>
         <img src="images/sunny-icon.png" alt="Icon of a sun">
-        <p>102º F</p>
+        <p><span id="temp">49</span>º F</p>
         <p>Sunny</p>
         <div>
           <hr>
         </div>
         <p>Wind Speed:</p>
-        <p>2 mph</p>
+        <p><span id="speed">4</span> mph</p>
+        <p>Wind Chill:</p>
+        <p><span id="chill"></span>º F</p>
       </article>
       <article class="newsRelease">
-        <h3>News Release</h3>
+        <h3>Dallas Embraces Emerging Tech</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
-          error? Dolorem, necessitatibus incidunt? Reiciendis beatae molestiae
-          praesentium qui natus, consequatur voluptate vel culpa? Quasi
-          accusamus eveniet repellat odit ullam aperiam natus totam officiis
-          perferendis dolore excepturi velit enim in repellendus nam, possimus
-          sequi quibusdam?
+          Dallas is witnessing a transformation as emerging technologies 
+          reshape its business landscape. Ai, blockchain, and advanced robotics
+          are driving economic growth and innovation in the region. In this brief 
+          article, we’ll show you how you could embrace these technologies for 
+          business growth in any sector.
         </p>
       </article>
       <div class="spotDiv">
         <article class="articleLayout">
-          <h3>Pro Painters</h3>
-          <img src="images/sunny-icon.png" alt="Icon of a sun">
-          <p>The right painters</p>
+          <h3>Hammer Law</h3>
+          <img src="images/hammer-icon.png" alt="Icon of a gavel">
+          <p>Let's get you some $$$!</p>
           <div>
             <hr>
           </div>
-          <p>Contact@ProPaint.com</p>
-          <p>999-999-999 | ProPaint.com</p>
+          <p>info@HammerLaw.com</p>
+          <p>214-XXX-XXXX | HammerLaw.com</p>
         </article>
         <article class="articleLayout">
-          <h3>Pro Painters</h3>
-          <img src="images/sunny-icon.png" alt="Icon of a sun">
-          <p>The right painters</p>
+          <h3>Sparks Electric</h3>
+          <img src="images/sparks-icon.png" alt="Icon of a lightning bolt">
+          <p>We conduit all!</p>
           <div>
             <hr>
           </div>
-          <p>Contact@ProPaint.com</p>
-          <p>999-999-999 | ProPaint.com</p>
+          <p>info@SparksTx.com</p>
+          <p>214-XXX-XXXX | SparksTx.com</p>
         </article>
         <article class="articleLayout hiddenArticle">
           <h3>Pro Painters</h3>
-          <img src="images/sunny-icon.png" alt="Icon of a sun">
+          <img src="images/paint-icon.png" alt="Icon of a paint brush">
           <p>The right painters</p>
           <div>
             <hr>
           </div>
-          <p>Contact@ProPaint.com</p>
-          <p>999-999-999 | ProPaint.com</p>
+          <p>info@ProPaint.com</p>
+          <p>214-XXX-XXXX | ProPaint.com</p>
         </article>
       </div>
       <div class="join">
@@ -149,7 +154,7 @@
     <footer>
       <div id="flexFootMain">
         <div>
-          <img src="images/logo-bottom.png" alt="Greater Dallas Chamber of Commerce logo">
+          <img src="images/logo-bottom.webp" alt="Greater Dallas Chamber of Commerce logo">
           <div>
             <p>GT Dallas Chamber of Commerce</p>
             <p>3819 Maple Ave, Dallas, TX 75219</p>
@@ -177,5 +182,6 @@
     <script src="scripts/lastmod.js"></script>
     <script src="scripts/nav-menu.js"></script>
     <script src="scripts/headerDate.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

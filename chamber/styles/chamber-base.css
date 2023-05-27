@@ -206,9 +206,11 @@ main {
 }
 
 .heroDiv h2 {
+  margin: 0;
   position: absolute;
-  top: 0.2rem;
-  left: 0.6rem;
+  top: 5%;
+  left: 15%;
+  color: #d80000;
 }
 
 .heroDiv div {
@@ -217,9 +219,9 @@ main {
   border-radius: 1rem;
   color: #ffffff;
   letter-spacing: 0.1rem;
-  padding: 0.25rem;
+  padding: 0.1rem 1rem;
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 10%;
 }
 
@@ -228,7 +230,7 @@ main {
 .artWeather {
   display: grid;
   /* template: rows / columns */
-  grid-template: 2rem 4rem 2rem 1rem 2rem / 1fr 1fr;
+  grid-template: 2rem 4rem 2rem 1rem 2rem 2rem / 1fr 1fr;
   text-align: center;
   padding: 0.5rem 0;
   background-image: linear-gradient(#7a7a7a, #dadada);
@@ -265,7 +267,7 @@ main {
   grid-column: 1/3;
 }
 
-.artWeather > *:nth-child(6) {
+.artWeather > *:nth-child(6), :nth-child(8) {
   justify-self: right;
 }
 /********************************************************/
@@ -314,6 +316,7 @@ main {
 .articleLayout img {
   align-self: center;
   justify-self: center;
+  width: 2.5rem;
 }
 
 .articleLayout > *:nth-child(4) {
