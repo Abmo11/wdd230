@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progressive Image Loading</title>
+  <meta name="description" content="Assignment showcasing progressive loading of images">
+  <link rel="icon" href="gdcc-icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/lazy-small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lazy Image Loading...</h1>
+  </header>
+  <main>
+    <div id="containerDiv">
+      <picture>
+        <img src="images/blank300x400.jpg" data-src="images/mini-bank.webp" alt="Picture of atm">
+      </picture>
+      <picture>
+        <img src="images/blank300x400.jpg" data-src="images/hwy.webp" alt="Aerial view of highway">
+      </picture>
+      <picture>
+        <img src="images/blank300x400.jpg" data-src="images/desert.webp" alt="Texas desert picture">
+      </picture>
+      <picture>
+        <img src="images/blank300x400.jpg" data-src="images/gt40.webp" alt="GT 40 car rear">
+      </picture>
+      <picture>
+        <img src="images/blank300x400.jpg" data-src="images/bulb.webp" alt="High def lightbulb">
+      </picture>
+    </div>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> | Abraham Moreno | Idaho
+    <div id="updated"></div>
+  </footer>
+  <script src="scripts/progress.js"></script>
+  <script src="scripts/lastmod.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+header,
+body,
+footer {
+  font-family: "Bangers", sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#containerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/*>>>>>>>>>>   Blur Effect   <<<<<<<<<<*/
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+  border-radius: 0.7rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+/* Pop up effect */
+picture img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0.1rem .7rem rgba(255, 0, 0);
+}
