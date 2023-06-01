@@ -9,7 +9,7 @@ The loadImages function is responsible for actually loading the images and updat
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
-  threshold: 0,
+  threshold: 1,
   rootMargin: "0px"
 };
 
