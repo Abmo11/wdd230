@@ -407,14 +407,14 @@ main {
 }
 
 #discoverPicContainer div a {
+  color: #000a9c;
   text-decoration: none;
-  color: #d80000;
   font-weight: bold;
   letter-spacing: .03rem;
 }
 
 #discoverPicContainer div a:hover {
-  color: #000a9c;
+  color: #d80000;
 }
 
 /**************   Discover Footer   *********************/
