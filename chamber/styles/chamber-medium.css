@@ -84,6 +84,31 @@
   }
 
   /********************************************************/
+  /***************   Discover Page   **********************/
+  /********************************************************/
+  #discoverPicContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  #discoverPicContainer h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Pop up effect for images */
+  #discoverPicContainer div img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0.2rem 0.3rem rgba(255, 0, 0);
+  }
+
+  #discoverPicContainer div p {
+    font-size: 1rem;
+  }
+
+  #discoverPicContainer div p {
+    padding: 0 1rem;
+  }
+
+  /********************************************************/
   /********************   Footer   ************************/
   /********************************************************/
   footer {
