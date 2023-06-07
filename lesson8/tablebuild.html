@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Build</title>
+  <meta name="description" content="Table build assignment for WDD230 week 8">
+  <link rel="icon" href="gdcc-icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/tablebuild-small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+</head>
+
+<body>
+  <header>
+    <h1>Table Build</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">Acme Wildwest Services</th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Basic</th>
+          <th>Premium</th>
+          <th>Deluxe</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Feature 1</th>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <th>Feature 2</th>
+          <td class="ex">&times;</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <th>Feature 3</th>
+          <td class="ex">&times;</td>
+          <td class="ex">&times;</td>
+          <td class="check">✔</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> | Abraham Moreno | Idaho
+    <div id="updated"></div>
+  </footer>
+  <script src="scripts/lastmod.js"></script>
+</body>
+
+</html>
