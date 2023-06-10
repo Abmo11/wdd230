@@ -143,6 +143,7 @@
   
   form input.submitBtn {
     grid-column: 2;
+    margin: 0 auto 2rem auto;
   }
 
   /********************************************************/
