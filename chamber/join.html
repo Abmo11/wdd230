@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join GDCC</title>
+  <meta name="description" content="Apply to join the chamber of commerce through a membership application form">
+  <link rel="icon" href="gdcc-icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/chamber-normalize.css">
+  <link rel="stylesheet" href="styles/chamber-base.css">
+  <link rel="stylesheet" href="styles/chamber-medium.css">
+  <link rel="stylesheet" href="styles/chamber-large.css">
+</head>
+
+<body>
+  <header>
+    <div id="monTueBanner">
+      Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+    </div>
+    <div id="headerContainer">
+      <div>
+        <picture>
+          <img src="images/gdcc-logo.webp" alt="Greater Dallas Chamber of Commerce logo">
+        </picture>
+        <div class="nameTitle">
+          <h1>Greater Dallas</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <div class="largeNav">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discovery</a></li>
+            <li><a href="#">Direction</a></li>
+            <li class="active"><a href="./join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="linkLogos">
+        <a href="https://www.youtube.com/">
+          <img src="images/youtube-icon.png" alt="YouTube icon logo">
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="images/facebook-icon.png" alt="Facebook icon logo">
+        </a>
+        <button id="hamburger">
+          <span>&#9776;</span>
+          <span>&#10005;</span>
+        </button>
+      </div>
+    </div>
+    <div id="headerDate"></div>
+    <div id="smallNav">
+      <nav>
+        <ul id="navOne">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./discover.html">Discovery</a></li>
+          <li><a href="#">Direction</a></li>
+          <li class="active"><a href="./join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="joinGrid">
+    <h2>Join The Greater Dallas Chamber</h2>
+    <form method="get" action="thankyou.html">
+
+      <fieldset>
+        <legend>Choose Your Membership</legend>
+        <label class="side"><input type="radio" name="membership" value="Non Profit" required>Non Profit | Free</label>
+        <p>Our NP Membership caters specifically to non-profit organizations, offering a range of benefits at no cost.
+           As an NP Member, your organization will have access to exclusive monthly training programs tailored to the non-profit sector.
+           Enjoy discounted rates for events and networking opportunities within our supportive community of fellow non-profit organizations.</p>
+        <label class="side"><input type="radio" name="membership" value="Bronze">Bronze Membership | $200</label>
+        <p>Unlock the potential of your business with our Bronze Membership package! Benefit from bi-monthly discounted rates 
+           for industry-leading training programs, focused on enhancing your business skills and strategies. Increase your visibility 
+           through our member directory and take advantage of event discounts and promotional opportunities to expand your reach!</p>
+        <label class="side"><input type="radio" name="membership" value="Silver">Silver Membership | $400</label>
+        <p>The Silver Membership tier is designed for ambitious entrepreneurs. Gain priority access to all of our networking 
+           events, showcase your business on our homepage, and access advanced, industry-specific training modules all at a 50% discount. 
+           Enjoy all of our event discounts, exclusive advertising opportunities, and a broader promotion of your business.</p>
+        <label class="side"><input type="radio" name="membership" value="Gold">Gold Membership | $600</label>
+        <p>The prestigious Gold Membership is tailored for established enterprises and industry leaders. This top-tier membership 
+           allows you to gain VIP access to high-profile select events to engage you with influential decision-makers. Enjoy unrestricted 
+           advertising opportunities, including prime positioning on our homepage and newsletter. As a Gold Member, you'll have access to 
+           personalized training sessions and personalized support from our chamber staff.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Applicant Information</legend>
+        <label class="top">First Name*<input type="text" name="fname" required></label>
+        <label class="top">Last Name*<input type="text" name="lname" required></label>
+        <label class="top">Business Position<input type="text" name="businessPosition" 
+          title="only accepts alpha characters, hyphens, and spaces with a minimum of seven characters" 
+          pattern="[a-zA-Z\- ]{7,}"></label>
+        <label class="top">Email*<input type="email" name="email" required placeholder=" name@gmail.com"></label>
+        <label class="top">Cell Phone*<input type="tel" name="phone" required placeholder=" 1231231234"></label>
+        <label class="top">Business Name*<input type="text" name="business" required></label>
+        <label class="top">Business Description<textarea name="businessDescription"></textarea></label>
+        <textarea hidden id="hiddenJoinDate" name="hiddenJoinDate"></textarea>
+      </fieldset>
+
+      <input class="submitBtn" type="submit" value="Join GDCC">
+
+    </form>
+  </main>
+
+  <footer>
+    <div id="flexFootMain">
+      <div>
+        <img src="images/logo-bottom.webp" alt="Greater Dallas Chamber of Commerce logo">
+        <div>
+          <p>GT Dallas Chamber of Commerce</p>
+          <p>3819 Maple Ave, Dallas, TX 75219</p>
+        </div>
+      </div>
+      <div>
+        <p>info@GDallasChamber.org</p>
+        <p>(214)-000-0000</p>
+        <a href="https://goo.gl/maps/XXfRvziYpz8ioQsT8" target="_blank">&#128205; Location Map</a>
+      </div>
+    </div>
+    <hr>
+    <div class="info">
+      <div>
+        <p>&copy;<span id="year"></span> Dallas Chamber</p>
+        <p>|</p>
+        <p>Abraham Moreno</p>
+        <p>|</p>
+        <p>WDD 230 Project</p>
+        <p>|</p>
+      </div>
+      <div id="updated"></div>
+    </div>
+  </footer>
+  <script src="scripts/lastmod.js"></script>
+  <script src="scripts/nav-menu.js"></script>
+  <script src="scripts/headerDate.js"></script>
+  <script src="scripts/hidden-join-date.js"></script>
+</body>
+
+</html>

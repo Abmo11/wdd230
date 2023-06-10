@@ -410,12 +410,12 @@ main {
   color: #000a9c;
   text-decoration: none;
   font-weight: bold;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   position: relative;
 }
 
 #discoverPicContainer div a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -435,6 +435,123 @@ main {
   padding: 1rem;
   background-color: #d80000;
   letter-spacing: 0.09rem;
+}
+
+/********************************************************/
+/*****************   Join Page   ************************/
+/********************************************************/
+#joinGrid {
+  display: block;
+}
+
+#joinGrid h2 {
+  margin: 3rem;
+  font-size: 1.5rem;
+  color: #d80000;
+}
+/********************   Form   **************************/
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #002fff;
+  border-radius: 0.7rem;
+}
+
+form legend {
+  color: #000a9c;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+form label.side {
+  display: block;
+  padding: 0.75rem 0;
+  color: #9c2c13;
+  font-size: 1.2rem;
+}
+
+form p {
+  letter-spacing: 0.09rem;
+  line-height: 1.1rem;
+  margin-top: 0;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+}
+
+form label.top input,
+form label.top textarea {
+  display: block;
+  border: solid 1px #888888;
+  border-radius: 0.3rem;
+  padding: 0.55rem 0;
+  color: #555555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #d80000;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin: 0 0 2rem 0;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: #d80000 solid 7px;
+}
+
+form label.top input:required:valid {
+  border-left: #0fb100 solid 7px;
+}
+
+form label.side input {
+  margin-right: 0.5rem;
+}
+
+
+
+/********************************************************/
+/****************   Thank You Page   ********************/
+/********************************************************/
+#thanksHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thanksHeader h1 {
+  margin-top: 3rem;
+  color: #d80000;
+}
+
+#thanksHeader a {
+  margin-bottom: 2rem;
+}
+
+#thanksMain {
+  display: block;
+}
+
+#thanksMain h2 {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  color: #000a9c;
+}
+
+#thanksMain p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  letter-spacing: .09rem;
+  margin: 5rem 0;
 }
 
 /********************************************************/
