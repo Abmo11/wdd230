@@ -19,7 +19,7 @@ h1 {
 /*>>>>>>>>>>   Blur Effect   <<<<<<<<<<*/
 
 picture img[data-src] {
-  filter: blur(0.2em);
+  filter: blur(0.13em);
 }
 
 picture img {
